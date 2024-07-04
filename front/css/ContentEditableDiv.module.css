@@ -1,0 +1,22 @@
+.editable {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    min-height: 20px;
+    margin-bottom: 20px;
+    /* or however tall you want your divs to be */
+}
+
+.editable:focus {
+    outline: none;
+    /* removes the default focus outline */
+}
+
+.placeholder {
+    color: #b0a996 !important;
+    /* your placeholder color */
+}
+
+.editable {
+    color: white;
+}

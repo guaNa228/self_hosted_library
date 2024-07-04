@@ -1,0 +1,84 @@
+.wrapper {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    border-radius: 15px;
+    width: 90%;
+    background: #000;
+    border: 1px solid white;
+    z-index: 15;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.inputs_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 80%;
+}
+
+.isbn_search_wrapper {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.isbn_search_wrapper span {
+    margin-right: 5px;
+}
+
+.isbn_search_wrapper input {
+    width: 90%;
+    margin-right: 5px;
+    min-width: 100px;
+}
+
+.isbn_search_wrapper button {
+    margin-top: 0px;
+}
+
+.isbn_error {
+    color: #f04a53;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+@media (max-width: 540px) {
+    .wrapper {
+        width: 80%;
+    }
+
+    .isbn_search_wrapper {
+        margin: 0 0;
+    }
+}
+
+.property_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+.property_wrapper label {
+    font-size: 14px;
+    color: #c5c5f0;
+}
+
+button {
+    margin-top: 20px;
+}
+
+input {
+    border: 1px solid white;
+    font-size: 20px;
+    outline: none;
+    color: white;
+}

@@ -1,0 +1,54 @@
+ .bookCard:hover img {
+     opacity: 1 !important;
+ }
+
+ .bookCard {
+     border: 1px solid #ccc;
+     padding: 20px;
+     margin-left: 10px;
+     margin-right: 10px;
+     border-radius: 8px;
+     width: 25%;
+     margin-bottom: 20px;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+
+ p.author {
+     font-size: 20px;
+     font-style: italic;
+ }
+
+ p.rating {
+     font-size: 36px;
+ }
+
+ p.comment {
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     font-family: monospace;
+     font-size: 16px;
+ }
+
+ @media (max-width: 720px) {
+     .bookCard {
+         width: 35%;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .bookCard {
+         width: 80%;
+     }
+ }
+
+ .cover {
+     width: 100%;
+     height: auto;
+     border-radius: 4px;
+     aspect-ratio: 3/4;
+     object-fit: contain;
+ }

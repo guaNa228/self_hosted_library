@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* OpenSans-Light */
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* OpenSans-Regular */
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #293240;
+    padding: 1rem;
+    font-family: "OpenSans";
+    margin: 0;
+    padding: 0;
+}
+
+body:has(.updateForm) {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+button {
+    outline: none;
+    color: #9cbdf0;
+    background: black;
+    border: 1px solid white;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.books {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.book {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 2px solid white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.book img {
+    border: 1.5px solid white;
+    aspect-ratio: 10/16;
+    width: 100%;
+}
+
+svg {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 30px;
+    cursor: pointer;
+}
+
+main.form {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input:not([type="submit"]) {
+    margin-bottom: 20px;
+}
+
+form input {
+    font-size: 24px;
+}
+
+form input[type="submit"] {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+p.comment {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 100px;
+    text-overflow: ellipsis;
+}
+
+form#ISBNForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+form#ISBNForm input[type="text"] {
+    flex-basis: 70%;
+    margin-bottom: 0;
+}
+
+form#ISBNForm input[type="submit"] {
+    flex-basis: 20%;
+    margin-top: 0;
+}
+
+.error {
+    color: red;
+}
+
+.updateForm {
+    margin: 20px auto;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.updateForm form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 60vh;
+    width: 100%;
+}
+
+.updateForm form input {
+    width: 40%;
+}
+
+input[type="number"] {
+    width: 50px;
+}
+
+input[type="number"]+span {
+    font-size: 25px;
+    margin-left: 5px;
+    margin-bottom: 4px;
+}
+
+div:has(textarea) {
+    width: 50%;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+}
+
+.updateForm img {
+    max-width: 100px;
+    aspect-ratio: 10/16;
+}
